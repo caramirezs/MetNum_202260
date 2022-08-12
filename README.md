@@ -4,4 +4,4 @@ El cuadernillo `Tutorial_Python_v3.ipynb` presenta material introductorio de `Py
 
 Todos los `notebooks` tienen un botón para abrir en `Google Colab` y pueden iniciarse desde allí. Se sugiere descargar y guardar el documento para que los cambios se conseven.
 
-xx
+xxx
