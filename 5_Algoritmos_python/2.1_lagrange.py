@@ -52,11 +52,12 @@ def LagrangePol(datos):
     return P
 
 
-# datos para $f(x)=\frac{1}{x}$ con $x_0=2$, $x_1=2.75$ y $x_2=4$
-#datosf = [(2, 1/2), (11/4, 4/11), (4, 1/4)]
-#Pf = LagrangePol(datosf)
-#print("Polinomio de Lagrange en x = 3:")
-#print("{0:.12f}".format(Pf(3)))
+#datos para $f(x)=\frac{1}{x}$ con $x_0=2$, $x_1=2.75$ y $x_2=4$
+datosf = [(2, 6), (5, 4), (6,5), (8,4), (12,3)]
+
+Pf = LagrangePol(datosf)
+print("Polinomio de Lagrange en x = 3:")
+print("{0:.12f}".format(Pf(3)))
 
 # datos $g(x)=\sin(3x)$, $x_0=1$, $x_1=1.3$, $x_2=1.6$, $x_3=1.9$ y $x_4=2.2$
 #datosg = [(1, 0.1411), (1.3, -0.6878), (1.6, -0.9962),(1.9, -0.5507), (2.2, 0.3115)]
