@@ -77,15 +77,15 @@ def Jacobi(A, b, x0, TOL, MAX):
 #Jacobi(A, b, x0, 1e-5, 50)
 
 
-#A = [[10, -1, 2], [-1, 11, -1], [2, -1, 10]]
-#b = [6, 25, -11]
-#x0 = [0, 0, 0]
-#print("Matriz A:")
-#pprint(A)
-#print("Vector b:")
-#pprint(b)
-#print("Semilla x0:")
-#pprint(x0)
-#print("Iteración de Jacobi")
-## $TOL = 10^{-10}$, $MAX=50$
-#Jacobi(A, b, x0, 1e-10, 50)
+A = [[5,1, 0, -9], [10, -7, 2, 3], [8, 0, -8, 0], [0, -5, 7, 10]]
+b = [0, 7, -1, -9]
+x0 = [0, 0, 0, 0]
+print("Matriz A:")
+pprint(A)
+print("Vector b:")
+pprint(b)
+print("Semilla x0:")
+pprint(x0)
+print("Iteración de Gauss-Seidel")
+# $TOL = 10^{-10}$, $MAX=50$
+Jacobi(A, b, x0, 1e-5, 50)

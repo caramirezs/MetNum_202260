@@ -77,16 +77,23 @@ def GaussSeidel(A, b, x0, TOL, MAX):
 # $TOL = 10^{-5}$, $MAX=50$
 #GaussSeidel(A, b, x0, 1e-5, 50)
 
-
-#A = [[10, -1, 2], [-1, 11, -1], [2, -1, 10]]
-#b = [6, 25, -11]
-#x0 = [0, 0, 0]
-#print("Matriz A:")
-#pprint(A)
-#print("Vector b:")
-#pprint(b)
-#print("Semilla x0:")
-#pprint(x0)
-#print("Iteración de Gauss-Seidel")
+import numpy as np
+A = [[-1 , 0 , 0 , np.sqrt(2)/2 , 1 , 0 , 0 , 0 ],
+    [0 , -1 , 0 , np.sqrt(2)/2 , 0 , 0 , 0 , 0 ],
+    [0 , 0 , -1 , 0 , 0 , 0 , 1/2 , 0 ],
+    [0 , 0 , 0 , -np.sqrt(2)/2 , 0 , -1 , -1/2 , 0 ],
+    [0 , 0 , 0 , 0 , -1 , 0 , 0 , 1 ],
+    [0 , 0 , 0 , 0 , 0 , 1 , 0 , 0 ],
+    [0 , 0 , 0 , -np.sqrt(2)/2 , 0 , 0 , np.sqrt(3)/2 , 0 ],
+    [0 , 0 , 0 , 0 , 0 , 0 , -np.sqrt(3)/2 , -1 ]]
+b = [0, 0, 0, 0, 0, 10000, 0, 0]
+x0 = [1,1,1,1,1,1,1,1]
+print("Matriz A:")
+pprint(A)
+print("Vector b:")
+pprint(b)
+print("Semilla x0:")
+pprint(x0)
+print("Iteración de Gauss-Seidel")
 # $TOL = 10^{-10}$, $MAX=50$
-#GaussSeidel(A, b, x0, 1e-10, 50)
+GaussSeidel(A, b, x0, 1e-5, 50)
