@@ -63,16 +63,16 @@ def NewtonPol(dat):
     return F, P
 
 
-datost = [(1,-5), (3,1), (-2,-29), (4,19)]
+datost = [(1,1), (2,-1), (3,3), (4,1)]
 T, P = NewtonPol(datost)
 print("Tabla de diferencias divididas:")
 pprint(T)
 print("Evaluar el polinomio en x = 0:")
-print(P(12))
+print(P(0))
 
-#datosf = [(2, 1/2), (11/4, 4/11), (4, 1/4)]
-#T, P = NewtonPol(datosf)
-#print("Tabla de diferencias divididas:")
-#pprint(T)
-#print("Evaluar el polinomio en x = 3:")
-#print(P(3))
+datost = [(-1,4), (2,7), (1,10), (-2,31)]
+T, P = NewtonPol(datost)
+print("Tabla de diferencias divididas:")
+pprint(T)
+print("Evaluar el polinomio en x = 0:")
+print(P(0))
