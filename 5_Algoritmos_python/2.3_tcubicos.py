@@ -81,7 +81,7 @@ def CubicSplines(datos):
 #print("D =", d)
 
 #Datos de prueba $(0,1)$, $(1,e)$, $(2,e^2)$ y $(3,e^3)$
-datosPrueba = [(2,6), (5,4), (6,5), (8,4), (12,3)]
+datosPrueba = [(-2,0), (0,-1), (1,1), (2,2), (4,0)]
 a, b, c, d = CubicSplines(datosPrueba)
 print("Vectores de coeficientes:")
 print("A =", a)
