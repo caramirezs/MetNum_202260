@@ -81,11 +81,13 @@ def lu(A):
     return L, U
 
 
-#A = [[4, 3], [6, 3]]
-#print("Matriz A:")
-#pprint(A)
-#lu(A)
-
+A = [[8, 4, -1],
+     [-2, 5, 1],
+     [2, -1, 6]]
+print("Matriz A:")
+pprint(A)
+L, U = lu(A)
+print(L)
 #A = [[0, 1], [1, 1]]
 #print("Matriz A:")
 #pprint(A)
